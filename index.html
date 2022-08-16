@@ -12,7 +12,58 @@
   <main>
     <h1>Register</h1>
     <p>Create your account. It`s free and only takes a minute.</p>
-    <form class="form" action="#" method="get"></form>
+    <form class="form" action="#" method="get">
+      <fieldset>
+        <input
+        id="First Name"
+        class="input"
+        name="First Name"
+        type="text"
+        placeholder="Enter name"
+        required
+        pattern="^[a-z0-9_-]{3,15}$"
+        />
+        <input
+        id="Last Name"
+        class="input"
+        name="Last Name"
+        type="text"
+        placeholder="Last Name"
+        required
+        pattern="^[a-z0-9_-]{3,15}$"
+        />
+        <input
+        id="Email"
+        class="input"
+        name="Email"
+        type="text"
+        placeholder="Email"
+        required
+        pattern="^[a-zA-Z0-9]{3,15}@[a-z]{1,64}\.[a-z]{1,64}$"
+        />
+        <input
+        id="Password"
+        class="input"
+        name="Password"
+        type="text"
+        placeholder="Password"
+        required
+        pattern="^[a-z0-9_-]{3,15}$"
+        />
+        <input
+        id="Confirm Password"
+        class="input"
+        name="Confirm Password"
+        type="text"
+        placeholder="Confirm Password"
+        required
+        pattern="^[a-z0-9_-]{3,15}$"
+        />
+        <input id="" type="checkbox" name="" value="true" />
+        <label for="">I accept the <a href="#">Terms of Use</a> & <a href="#">Privacy Policy</a></label>
+      </fieldset>
+        <button disabled type="submit">Register Now</button>
+    </form>
   </main>
   
 </body>
