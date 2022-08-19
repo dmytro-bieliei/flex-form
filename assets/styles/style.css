@@ -1,0 +1,51 @@
+*{
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+}
+
+.header_content {
+  margin: 0 auto;
+  padding: 20px 0;
+  line-height: 1.5;
+  max-width: 600px;
+  text-align: center;
+  background-color: #d3aeae;
+  /* border: 5px solid rebeccapurple; */
+}
+
+.main_heading {
+  font-size: 40px;
+}
+
+.form_name {
+
+}
+
+.form_block {
+  margin: 0 auto;
+  /* border: 5px solid black; */
+  max-width: 600px;
+  background-color: #d3aeae;
+}
+
+.username,.email,.password,.confirm_password,.checkbox,.btn {
+  margin-bottom: 10px;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  padding: 20px;
+  max-width: 200px;
+}
+
+
