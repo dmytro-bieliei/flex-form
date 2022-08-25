@@ -4,88 +4,89 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Flex_form</title>
   <link rel="stylesheet" href="assets/styles/reset.css">
   <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body>
-  <header class="header_content">
-    <h1 class="main_heading">Register</h1>
-    <p class="form_name">Create your account. It`s free and only takes a minute.</p>
-  </header>
   <main class="form_block">
+    <article class="header_content">
+      <h1 class="main_heading">Register</h1>
+      <p class="form_name">Create your account. It`s free and only takes a minute.</p>
+    </article>
     <form class="form" action="#" method="get">
-      <fieldset class="inputs">
-        <div class="username">
-          <!-- First Name -->
-          <label for="First Name">
-          <input
-          id="First Name"
-          class="input"
-          name="username"
-          type="text"
-          placeholder="Enter name"
-          required
-          pattern="^[a-z0-9_-]{3,15}$"
+        <fieldset class="inputs">
+          <div class="username">
+            <!-- First Name -->
+            <label for="First Name">
+            <input
+            id="First Name"
+            class="input wrap-width"
+            name="username"
+            type="text"
+            placeholder="Enter name"
+            required
+            pattern="^[a-z0-9_-]{3,15}$"
+            />
+            </label>
+            <!-- Last Name -->
+            <label for="Last Name">
+            <input
+              id="Last Name"
+            class="input wrap-width"
+            name="Last Name"
+            type="text"
+            placeholder="Last Name"
+            required
+            pattern="^[a-z0-9_-]{3,15}$"
+            />
+            </label>
+          </div>
+          
+          <!-- Email -->
+          <label class="email" for="Email">
+            <input
+            id="Email"
+            class="input"
+            name="Email"
+            type="email"
+            placeholder="Email"
+            required
+            pattern="^[a-zA-Z0-9]{3,15}@[a-z]{1,64}\.[a-z]{1,64}$"
+            />
+          </label>
+          <!-- Password -->
+          <label class="password" for="Password">
+            <input
+            id="Password"
+            class="input"
+            name="Password"
+            type="password"
+            placeholder="Password"
+            required
+            pattern="^[a-z0-9_-]{3,15}$"
           />
-        </label>
-        <!-- Last Name -->
-        <label for="Last Name">
-          <input
-            id="Last Name"
-          class="input"
-          name="Last Name"
-          type="text"
-          placeholder="Last Name"
-          required
-          pattern="^[a-z0-9_-]{3,15}$"
-          />
-        </label>
-      </div>
-        
-        <!-- Email -->
-        <label class="email" for="Email">
-          <input
-          id="Email"
-          class="input"
-          name="Email"
-          type="email"
-          placeholder="Email"
-          required
-          pattern="^[a-zA-Z0-9]{3,15}@[a-z]{1,64}\.[a-z]{1,64}$"
-          />
-        </label>
-        <!-- Password -->
-        <label class="password" for="Password">
-          <input
-          id="Password"
-          class="input"
-          name="Password"
-          type="password"
-          placeholder="Password"
-          required
-          pattern="^[a-z0-9_-]{3,15}$"
-        />
-        </label>
-        <!-- Confirm Password -->
-        <label class="confirm_password" for="Confirm Password">
-          <input
-          id="Confirm Password"
-          class="input"
-          name="Confirm Password"
-          type="password"
-          placeholder="Confirm Password"
-          required
-          pattern="^[a-z0-9_-]{3,15}$"
-          /></label>
-          <!-- checkbox -->
-          <label  class="checkbox" for="checkbox">I accept the <a href="#">Terms of Use</a> & <a href="#">Privacy Policy</a><input id="checkbox" type="checkbox" name="confirmed" value="true" required />
-          </label>       
-          <!-- button -->
-        <button class="btn" type="submit">Register Now</button>
-      </fieldset>
-        
-    </form>
+          </label>
+          <!-- Confirm Password -->
+          <label class="confirm_password" for="Confirm Password">
+            <input
+            id="Confirm Password"
+            class="input"
+            name="Confirm Password"
+            type="password"
+            placeholder="Confirm Password"
+            required
+            pattern="^[a-z0-9_-]{3,15}$"
+            /></label>
+            <!-- checkbox -->
+            <label  class="checkbox" for="checkbox">I accept the <a href="#" class="green_color">Terms of Use</a> & <a href="#" class="green_color">Privacy Policy</a><input id="checkbox" class="position_checkbox" type="checkbox" name="confirmed" value="true" required />
+            </label>       
+            <!-- button -->
+          <button class="btn" type="submit">Register Now</button>
+        </fieldset>
+      </form>
+    
+    
   </main>
   
 </body>
