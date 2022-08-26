@@ -1,6 +1,5 @@
 *{
   box-sizing: border-box;
-  /* display: block; */
 }
 
 :root {
@@ -10,37 +9,42 @@
   
 }
 
-/* .centring {
-  margin: 0 auto;
-} */
-
-.form_block {
+.header_content {
+  display: flex;
+  flex-direction:column ;
+  align-items: center;
   background-color: rgb(219, 218, 218);
-  margin: 0 auto;
+  margin: 10px auto;
   min-width: 320px;
   max-width: 600px;
 }
 
-.header_content {
-  width: 100%;
-  display: flex;
-  flex-direction:column ;
-  align-items: center;
-}
-
 .main_heading {
-  /* padding: 20px 0; */
+  display: flex;
+  align-items: center;
   font-size: 2.5rem;
   margin-top: 20px;
+  /* position: relative; */
+}
 
+.main_heading::before {
+margin-right: 1rem;
+}
+
+.main_heading::after {
+margin-left: 1rem;
 }
 
 .main_heading::before, .main_heading::after {
-  content: "---";
-  /* background-color: black; */
-  /* width: 20px;
+  /* display: inline-block; */
+  content: "";
+  /* position: absolute; */
+  background-color: rgb(98, 100, 100);
+  width: 50px;
   height: 5px;
-  border: 1px solid black; */
+  top: 1.25rem;
+  flex: 1;
+  /* border: 1px solid black; */
 }
 
 .form_name {
@@ -51,9 +55,16 @@
   line-height: 1.5;
 }
 
+.form-inputs {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  min-width: 100px;
+  position: relative;
+}
+
 .input {
   font-size: 1.25rem;
-  /* min-width: 300px; */
   width: 100%;
   margin-top: 1rem;
   padding: 0.5rem;
@@ -61,26 +72,17 @@
   background-color: rgb(236, 238, 238);
 }
 
-.inputs {
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  /* align-items: center; */
-  min-width: 100px;
-  position: relative;
-}
-
 .username {
   display: flex;
   justify-content: space-between;
   }
-/* .wrap-width {
-  max-width: 40%;
-  min-width: 150px;
-} */
+
+.wrap-width {
+  max-width: 48%;
+  /* min-width: 150px; */
+}
 
 .checkbox {
-  /* text-align: left; */
   display: inline-block;
   width: 100%;
   font-size: 1.25rem;
@@ -111,5 +113,8 @@
     /* flex-wrap: wrap; */
     flex-direction: column;
   }
+  .wrap-width {
+    max-width: 100%;
+    /* min-width: 150px; */
+  }
 }
-
