@@ -10,11 +10,11 @@
 </head>
 <body>
   <main>
-    <article class="header_content">
+    <article class="registration-container">
       <h1 class="main_heading">Register</h1>
       <p class="form_name">Create your account. It`s free and only takes a minute.</p>
-      <form class="form form-inputs" action="#" method="get">
-        <div class="username">
+      <form class="form-inputs" action="#" method="get">
+        <div class="small-inputs-container">
           <!-- First Name -->
           <input
           id="First Name"
@@ -29,7 +29,7 @@
           <input
           id="Last Name"
           class="input wrap-width"
-          name="Last Name"
+          name="lastName"
           type="text"
           placeholder="Last Name"
           required
@@ -60,17 +60,23 @@
         <input
         id="Confirm Password"
         class="input"
-        name="Confirm Password"
+        name="confirmPassword"
         type="password"
         placeholder="Confirm Password"
         required
         pattern="^[a-z0-9_-]{3,15}$"
         />
         <!-- checkbox -->
-        <label  class="checkbox" for="checkbox">I accept the <a href="#" class="green_color">Terms of Use</a> & <a href="#" class="green_color">Privacy Policy</a><input id="checkbox" class="position_checkbox" type="checkbox" name="confirmed" value="true" required />
+        <label  class="checkbox-label" for="checkbox">
+          <input id="checkbox"
+          class="checkbox-input"
+          type="checkbox" 
+          name="confirmed"
+          value="true" required 
+          /> <span> I accept the <a href="#" class="green_color">Terms of Use</a> & <a href="#" class="green_color">Privacy Policy</a></span>
         </label>
         <!-- button -->
-        <button class="btn" type="submit">Register Now</button>
+        <button class="btn" type="submit">Register Now egister Nowegister Nowegister Nowegister Nowegister Nowegister Nowegister Nowegister Now</button>
       </form>
     </article>
   </main>
